@@ -1,19 +1,10 @@
 {
-  "HA_min_version": "2024.1.0",
-  "documentation": "https://github.com/edisonACDC/ha-secure-pin-card",
-  "issue_tracker": "https://github.com/edisonACDC/ha-secure-pin-card/issues",
+  "manifest_version": 1,
+  "name": "Secure PIN Card",
+  "codeowners": ["@EdisonACDC"],
+  "config_flow": false,
+  "documentation": "https://github.com/EdisonACDC/ha-secure-pin-card",
+  "issue_tracker": "https://github.com/EdisonACDC/ha-secure-pin-card/issues",
   "requirements": [],
-  "version": "1.0.0",
-  "codeowners": ["@edisonACDC"],
-  "config": {
-    "step": {
-      "init": {
-        "description": "Configura Secure PIN Card",
-        "data": {
-          "pin": "PIN di accesso",
-          "timeout": "Timeout sessione (secondi)"
-        }
-      }
-    }
-  }
+  "version": "1.0.0"
 }
