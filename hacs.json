@@ -1,10 +1,8 @@
 {
   "name": "Secure PIN Card",
-  "domains": [],
   "codeowners": ["@EdisonACDC"],
   "content_in_root": false,
   "filename": "secure-pin-card.js",
   "render_readme": true,
-  "homeassistant": "2024.1.0",
-  "documentation": "https://github.com/EdisonACDC/ha-secure-pin-card"
+  "homeassistant": "2024.1.0"
 }
