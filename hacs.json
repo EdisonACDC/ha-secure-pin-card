@@ -1,7 +1,10 @@
 {
-  "HA_min_version": "2024.1.0",
-  "documentation": "https://github.com/edisonACDC/ha-secure-pin-card",
-  "issue_tracker": "https://github.com/edisonACDC/ha-secure-pin-card/issues",
-  "requirements": [],
-  "version": "1.0.0"
+  "name": "Secure PIN Card",
+  "domains": [],
+  "codeowners": ["@EdisonACDC"],
+  "content_in_root": false,
+  "filename": "secure-pin-card.js",
+  "render_readme": true,
+  "homeassistant": "2024.1.0",
+  "documentation": "https://github.com/EdisonACDC/ha-secure-pin-card"
 }
