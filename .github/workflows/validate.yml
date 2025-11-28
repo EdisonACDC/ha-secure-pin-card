@@ -1,0 +1,50 @@
+# Validate schema for Secure PIN Card
+# Home Assistant configuration validation
+
+title: Secure PIN Card
+description: Custom card for secure PIN access in Home Assistant
+input:
+  pin_code:
+    name: PIN Code
+    description: The PIN code to set for this card
+    selector:
+      text:
+        type: password
+  session_timeout:
+    name: Session Timeout
+    description: Session timeout in seconds
+    default: 60
+    selector:
+      number:
+        min: 30
+        max: 600
+        unit_of_measurement: seconds
+  max_attempts:
+    name: Maximum Attempts
+    description: Maximum PIN attempts before lockout
+    default: 3
+    selector:
+      number:
+        min: 1
+        max: 10
+  lockout_duration:
+    name: Lockout Duration
+    description: Duration of lockout after max attempts in seconds
+    default: 60
+    selector:
+      number:
+        min: 30
+        max: 3600
+        unit_of_measurement: seconds
+  show_logs:
+    name: Show Access Logs
+    description: Display access logs on the card
+    default: true
+    selector:
+      boolean:
+  enable_notifications:
+    name: Enable Notifications
+    description: Send notifications on PIN access attempts
+    default: false
+    selector:
+      boolean:
